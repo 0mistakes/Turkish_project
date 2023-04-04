@@ -25,6 +25,7 @@ body {
   font-family: "Expletus Sans";
   position: relative;
   color: #fff;
+  overflow-x: hidden;
 }
 body._lock {
   overflow: hidden;
@@ -105,6 +106,8 @@ body._lock {
 .image_fon {
   background-image: url(../img/image1.png);
   background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 
 /*--------------------/General--------------------*/
@@ -397,7 +400,7 @@ body._lock {
   font-size: 24px;
   text-transform: capitalize;
   color: #ffffff;
-  padding: 10px;
+  padding: 17px;
   border-radius: 9px;
 }
 .filter__btn button:active {
@@ -405,7 +408,7 @@ body._lock {
 }
 @media (max-width: 576px) and (min-width: 475px) {
   .filter__btn {
-    grid-column: 1/4;
+    grid-column: 1/5;
   }
 }
 
@@ -503,17 +506,36 @@ body._lock {
 /*--------------------Popular--------------------*/
 .popular {
   position: relative;
-  width: 1921px;
-  height: 1319px;
   padding: clamp(1.875rem, -0.489rem + 1.48vw, 1.5rem) 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: visible;
+  width: 100%;
+  height: 1202px;
+  background: #2C2F33;
+  box-shadow: 0px -11px 24px rgba(0, 0, 0, 0.25);
+  overflow: visible;
+}
+@media (max-width: 1200px) {
+  .popular__container {
+    max-width: 970px;
+  }
+}
+.popular__title {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 126%;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-top: -100px;
 }
 .popular__slider {
-  margin-top: 40px;
+  margin-top: 112px;
   position: relative;
   z-index: 1;
 }
@@ -523,13 +545,18 @@ body._lock {
   margin-top: 45px;
 }
 
-.popular_fon {
-  width: 1918px;
-  height: 1202px;
-  background: #2C2F33;
-  box-shadow: 0px -11px 24px rgba(0, 0, 0, 0.25);
-  position: relative;
-  overflow: visible;
+.popular::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1000px;
+  height: 1165px;
+  opacity: 0.75;
+  background-image: url(/img/image3.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
 }
 
 .popular-slide {
@@ -537,9 +564,15 @@ body._lock {
   flex-direction: column;
   gap: 27px;
 }
-@media (max-width: 660px) {
+@media (max-width: 768px) {
   .popular-slide {
     text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .popular-slide__thumb .popular-slide__thumb {
+    width: 100%;
+    flex-direction: column;
   }
 }
 .popular-slide__title {
@@ -623,8 +656,11 @@ body._lock {
 /*--------------------Why--------------------*/
 .why {
   position: relative;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 110px;
+  margin-top: -65px;
+  background: linear-gradient(101.4deg, #1A98A0 1.66%, #54D4DC 86.55%);
+  border-radius: 70px 70px 0px 0px;
 }
 .why__title {
   text-align: center;
@@ -650,10 +686,10 @@ body._lock {
   justify-content: center;
   transform: translateX(-50%);
 }
-@media (max-width: 975px) {
+@media (max-width: 667px) {
   .why_title {
-    text-align: center;
     flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -712,11 +748,6 @@ body._lock {
   color: #ffffff;
 }
 
-.why_fon {
-  background: linear-gradient(101.4deg, #1A98A0 1.66%, #54D4DC 86.55%);
-  border-radius: 70px 70px 0px 0px;
-}
-
 .item-why {
   display: flex;
   align-items: center;
@@ -764,7 +795,8 @@ body._lock {
   background: linear-gradient(110.92deg, #E2FDFF 1.42%, #C8FBFE 97.19%);
   border-radius: 70px 70px 0px 0px;
   padding-top: 350px;
-  padding-bottom: 350px;
+  padding-bottom: 220px;
+  margin-top: -65px;
 }
 @media (max-width: 992px) {
   .gallery {
@@ -829,6 +861,19 @@ body._lock {
 }
 .gallery__text {
   margin-top: 22px;
+}
+
+.gallery::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 759px;
+  height: 1080px;
+  background-image: url(/img/image4.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
 }
 
 .gallery_title {
@@ -900,6 +945,4 @@ body._lock {
   font-size: 30px;
   line-height: 126%;
   color: #000000;
-}
-
-/*--------------------/Gallery--------------------*//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
