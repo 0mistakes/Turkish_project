@@ -162,8 +162,7 @@ body {
 		line-height: 18px;
 		width: 194px;
 		height: 59px;
-		left: 1497px;
-		top: 29px;
+		margin-right: -60px;
 		cursor: pointer;
 		@media (max-width: 576px) {
 			padding: 7px 15px;
@@ -231,7 +230,7 @@ body {
 	&__body {
 		display: flex;
 		align-items: center;
-		gap: 80px;
+		gap: 71px;
 		@media (max-width: 992px) {
 			flex-direction: column;
 			margin: auto;
@@ -242,8 +241,11 @@ body {
 	}
 	// .menu__link
 	&__link {
-		font-weight: 500;
-		font-size: 16px;
+		font-family: 'Expletus Sans';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 27px;
 		text-transform: capitalize;
 		color: var(--text-color);
 		text-decoration: none;

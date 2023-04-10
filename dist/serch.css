@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:regular,500,600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Expletus+Sans:regular,500,600&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,400,500,600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +22,6 @@ ul {
 }
 
 body {
-  font-family: "Expletus Sans";
   position: relative;
   color: #fff;
   overflow-x: hidden;
@@ -152,8 +151,7 @@ body._lock {
   line-height: 18px;
   width: 194px;
   height: 59px;
-  left: 1497px;
-  top: 29px;
+  margin-right: -60px;
   cursor: pointer;
 }
 @media (max-width: 576px) {
@@ -223,7 +221,7 @@ body._lock {
 .menu__body {
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 71px;
 }
 @media (max-width: 992px) {
   .menu__body {
@@ -232,8 +230,11 @@ body._lock {
   }
 }
 .menu__link {
-  font-weight: 500;
-  font-size: 16px;
+  font-family: "Expletus Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
   text-transform: capitalize;
   color: var(--text-color);
   text-decoration: none;
@@ -288,25 +289,455 @@ body._lock {
   /* identical to box height */
   color: #000000;
   margin-top: 100px;
-  margin-left: 225px;
+  margin-left: 125px;
+}
+
+.buy_arend {
+  position: absolute;
+  padding-top: 66px;
+  margin-left: 140px;
+  padding-right: 0px;
+}
+
+.buy {
+  border: 2px solid transparent;
+  background: #00A3FF;
+  width: 146px;
+  height: 49px;
+  border-radius: 8px;
+  margin-right: -4px;
+}
+
+.buy_a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.arend_a {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.arend {
+  border: 2px solid transparent;
+  background: #EFEFEF;
+  width: 146px;
+  height: 49px;
+  border-radius: 8px;
 }
 
 .kvadrati {
+  position: relative;
   display: flex;
-  margin-left: 225px;
-  margin-top: 97px;
+  margin-left: 500px;
+  padding-top: 66px;
   flex-wrap: wrap;
 }
 
-.blocks1, .blocks2, .blocks3 {
+.kvadrati > div {
   background: #E7E7E7;
   border-radius: 10px;
-  width: 466px;
-  height: 275px;
+  width: 353px;
+  height: 350px;
   margin-right: 20px;
   margin-bottom: 20px;
 }
 
-.blocks3 {
+.kvadrati > div:nth-child(3n+3) {
   margin-right: 0;
+}
+
+.block_text {
+  padding-top: 18px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.main_text {
+  padding-top: 5px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #828282;
+}
+
+.bottom_text1 {
+  box-sizing: border-box;
+  width: 118px;
+  height: 59px;
+  display: inline-block;
+  background: #D9D9D9;
+  border: 0.5px solid #828282;
+  border-radius: 0px 0px 10px 10px;
+  margin-right: -5px;
+}
+
+.bottom_text1 p {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.filtr_search {
+  width: 277px;
+  height: 1535px;
+  margin-top: 50px;
+  background: #EFEFEF;
+  border-radius: 8px;
+  margin-bottom: 97px;
+}
+
+.type_of_object {
+  padding-top: 20px;
+  padding-left: 43px;
+}
+
+.main_a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #282828;
+}
+
+.filter_link {
+  padding-top: 20px;
+}
+
+.filter_a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #282828;
+  display: block;
+  padding-left: 0;
+}
+
+.filter_a:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  border: 0.5px solid #646464;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+.year_of_build {
+  position: relative;
+  padding-top: 20px;
+  padding-left: 43px;
+}
+
+.years {
+  display: flex;
+  align-items: center;
+  padding-top: 11px;
+}
+
+.year {
+  position: relative;
+  display: inline-flex;
+  margin-right: 11px;
+  white-space: nowrap;
+  border: 0.5px solid #848484;
+  border-radius: 8px;
+  width: 99px;
+  height: 33px;
+  box-sizing: border-box;
+}
+
+.year span {
+  position: relative;
+  padding-top: 7px;
+  padding-left: 6px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #525252;
+}
+
+.year span::after {
+  content: url("/img/strlelka.png");
+  display: inline-block;
+  width: 11px;
+  height: 5px;
+  margin-left: 18px;
+  vertical-align: center;
+}
+
+.year1 {
+  position: relative;
+  display: inline-flex;
+  margin-right: 11px;
+  white-space: nowrap;
+  border: 0.5px solid #848484;
+  border-radius: 8px;
+  width: 99px;
+  height: 33px;
+  box-sizing: border-box;
+}
+
+.year1 span {
+  position: relative;
+  padding-top: 10px;
+  padding-left: 4px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 10px;
+  /* identical to box height */
+  color: #525252;
+}
+
+.year1 span::after {
+  content: url("/img/strlelka.png");
+  display: inline-block;
+  width: 11px;
+  height: 5px;
+  margin-left: 6px;
+  vertical-align: center;
+}
+
+.year2 {
+  position: relative;
+  display: inline-flex;
+  margin-right: 11px;
+  white-space: nowrap;
+  border: 0.5px solid #848484;
+  border-radius: 8px;
+  width: 99px;
+  height: 33px;
+  box-sizing: border-box;
+}
+
+.year2 span {
+  position: relative;
+  padding-top: 10px;
+  padding-left: 4px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #525252;
+}
+
+.year2 span::after {
+  content: url("/img/strlelka.png");
+  display: inline-block;
+  width: 11px;
+  height: 5px;
+  margin-left: 17px;
+  vertical-align: center;
+}
+
+.year3 {
+  position: relative;
+  display: inline-flex;
+  margin-right: 11px;
+  white-space: nowrap;
+  border: 0.5px solid #848484;
+  border-radius: 8px;
+  width: 99px;
+  height: 33px;
+  box-sizing: border-box;
+}
+
+.year3 span {
+  position: relative;
+  padding-top: 10px;
+  padding-left: 4px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #525252;
+}
+
+.year3 span::after {
+  content: url("/img/strlelka.png");
+  display: inline-block;
+  width: 11px;
+  height: 5px;
+  margin-left: 20px;
+  vertical-align: center;
+}
+
+.year3-second {
+  position: relative;
+  display: inline-flex;
+  margin-right: 11px;
+  white-space: nowrap;
+  border: 0.5px solid #848484;
+  border-radius: 8px;
+  width: 99px;
+  height: 33px;
+  box-sizing: border-box;
+}
+
+.year3-second span {
+  position: relative;
+  padding-top: 10px;
+  padding-left: 4px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #525252;
+}
+
+.year3-second span::after {
+  content: url("/img/strlelka.png");
+  display: inline-block;
+  width: 11px;
+  height: 5px;
+  margin-left: 7px;
+  vertical-align: center;
+}
+
+.year4 {
+  position: relative;
+  display: inline-flex;
+  margin-right: 11px;
+  white-space: nowrap;
+  border: 0.5px solid #848484;
+  border-radius: 8px;
+  width: 99px;
+  height: 33px;
+  box-sizing: border-box;
+}
+
+.year4 span {
+  position: relative;
+  padding-top: 10px;
+  padding-left: 4px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #525252;
+}
+
+.year4 span::after {
+  content: url("/img/strlelka.png");
+  display: inline-block;
+  width: 11px;
+  height: 5px;
+  margin-left: 48px;
+  vertical-align: center;
+}
+
+.year4-second {
+  position: relative;
+  display: inline-flex;
+  margin-right: 11px;
+  white-space: nowrap;
+  border: 0.5px solid #848484;
+  border-radius: 8px;
+  width: 99px;
+  height: 33px;
+  box-sizing: border-box;
+}
+
+.year4-second span {
+  position: relative;
+  padding-top: 10px;
+  padding-left: 4px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #525252;
+}
+
+.year4-second span::after {
+  content: url("/img/strlelka.png");
+  display: inline-block;
+  width: 11px;
+  height: 5px;
+  margin-left: 43px;
+  vertical-align: center;
+}
+
+.button_cont {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 28px;
+}
+
+.done_filter {
+  position: relative;
+  width: 261px;
+  height: 49px;
+  background: #00A3FF;
+  border-radius: 8px;
+  border: none;
+}
+
+.done_filter a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.more {
+  position: relative;
+  width: 1100px;
+  height: 49px;
+  margin-left: 500px;
+}
+
+.show_more {
+  background: #00A3FF;
+  border-radius: 8px;
+  border: none;
+  width: 1100px;
+  height: 49px;
+}
+
+.show_more a {
+  text-align: center;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
 }/*# sourceMappingURL=serch.css.map */

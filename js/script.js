@@ -76,3 +76,4 @@ if (galleryItems.length > 0) {
 		})
 	})
 }
+
