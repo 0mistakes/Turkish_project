@@ -345,12 +345,40 @@ body._lock {
 }
 
 .kvadrati > div {
+  position: relative;
   background: #E7E7E7;
   border-radius: 10px;
   width: 353px;
   height: 350px;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+
+.prices {
+  position: absolute;
+  width: 165px;
+  height: 31px;
+  background-color: #03C668;
+  border-radius: 5px;
+  background-size: cover;
+  margin-left: 175px;
+  margin-top: -20px;
+  background-size: cover;
+  z-index: 100;
+}
+
+.prices p {
+  padding-top: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #FFFFFF;
 }
 
 .kvadrati > div:nth-child(3n+3) {
